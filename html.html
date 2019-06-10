@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VGS Collect Credit Card Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="https://js.verygoodvault.com/vgs-collect/1/vgs-collect-examples.js"></script>
+    <style>
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      
+      .box div {
+        width: 100px;
+        height: 100px;
+      }
+      html, body {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box-inner">
+        
+        <section class="form-group">
+          <label for="cc-name">Name</label>
+          <span id="cc-name" class="form-field">
+            <!--VGS Collect iframe for card name field will be here!-->
+          </span>
+        </section>
+        <script>
+          const form = VGSCollect.create('tntq4dwvhri', function(state) {});
+
+          // Create VGS Collect field for credit card name
+          form.field('#cc-name', {
+            type: 'text',
+            name: 'card_name',
+            placeholder: 'Joe Business',
+            validations: ['required'],
+          });
+        </script>
+      </div>
+    </div>
+  </body>
+<html>
