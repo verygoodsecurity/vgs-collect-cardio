@@ -78,6 +78,14 @@ export default function CollectView(props) {
                 validations: ['required'],
               });
 
+              // form.submit('/post', {
+              //   data: {
+
+              //   }
+              // }, function(status, data) {
+              //   // window.ReactNativeWebView.postMessage("qweqweqweqweqwe", "*");
+              // });
+
               document.getElementById('cc-form')
               .addEventListener('submit', function(e) {
                 e.preventDefault();

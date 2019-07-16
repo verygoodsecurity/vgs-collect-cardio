@@ -1,5 +1,5 @@
 {
-  "name": "florTest",
+  "name": "VGSCardIO",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "react": "16.8.3",
     "react-native": "0.59.8",
     "react-native-awesome-card-io": "^0.8.2",
+    "react-native-credit-card-input": "^0.4.1",
     "react-native-webview": "^5.10.0"
   },
   "devDependencies": {
