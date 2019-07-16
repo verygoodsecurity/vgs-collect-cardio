@@ -1,7 +1,8 @@
 {
   "name": "vgs-collect-cardio",
   "version": "0.0.1",
-  "private": true,
+  "description": "Put a description here",
+  "main": "./index.js",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
@@ -23,5 +24,9 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "author": {
+    "name": "Your name",
+    "email": "your email"
   }
 }
