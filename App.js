@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Text, Button } from 'react-native';
-import Cardio from './Cardio';
+import Cardio from '.';
 
 
 export default function App() {
