@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Text, Button } from 'react-native';
-import Cardio from '.';
+import VGSCollectCardio from '.';
 
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
         <Text key={key}>{item.cardNumber} - {item.expiryMonth} / {item.expiryYear}</Text>
       ))}
 
-      <Cardio 
+      <VGSCollectCardio 
         onSuccess={(card) => storeCard(card)}
         styles={{
           VGSCardIOWrapper: styles.VGSCardIOWrapper,
@@ -28,7 +28,7 @@ export default function App() {
         loader="Loader text"
       >
         Scan BTN!
-      </Cardio>
+      </VGSCollectCardio>
 
     </View>
   );
