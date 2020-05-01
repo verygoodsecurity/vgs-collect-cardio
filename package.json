@@ -5,14 +5,17 @@
   "main": "./index.js",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.8",
     "react-native-awesome-card-io": "^0.8.2",
     "react-native-credit-card-input": "^0.4.1",
-    "react-native-webview": "^5.10.0"
+    "react-native-webview": "^5.10.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -28,5 +31,6 @@
   "author": {
     "name": "Your name",
     "email": "your email"
-  }
+  },
+  "snyk": true
 }
